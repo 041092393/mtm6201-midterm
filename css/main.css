@@ -1,14 +1,10 @@
-
-
-
 /* Start of basic document styling */
 /* * {
     margin-left: 0;
     margin-right: 0;
 } */
 .container {
-    max-width:480px;
-    margin: 0;
+    margin: 0 auto;
 }
 
 body {
@@ -19,10 +15,10 @@ body {
     box-sizing: border-box;
 }
 
-ul li a{
-     text-decoration: none;
-     list-style-type: none;
-     color: black;
+ul li a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
 }
 
 p {
@@ -30,286 +26,354 @@ p {
 }
 
 /***************** MOBILE STYLING *****************/
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    /* Styles */
 
-/* navigation */
-.nav{
-    display:flex;
+    /* navigation */
+    .nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* border: 1px solid black; */
+        padding-left: 150px;
+        padding-right: 150px;
+        width: 900px;
+        box-sizing: border-box;
+    }
+
+    #sign-up {
+        background-color: black;
+        color: white;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        border-radius: 10px;
+    }
+
+    .nav ul li {
+        list-style-type: none;
+        line-height: 5rem;
+        text-align: center;
+        font-size: 35px;
+    }
+
+    .nav ul li:visited {
+        text-decoration: none;
+    }
+
+    /* Landing graphic */
+    .front-page {
+        background-color: #C2C8DB;
+        border-radius: 30px;
+        width: 920px;
+        box-sizing: border-box;
+        padding-top: 1em;
+        padding-left: 2em;
+        padding-right: 4em;
+
+    }
+
+    h1 {
+        margin-bottom: -.5em;
+        font-weight: 900;
+    }
+
+    #content>img {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    #shop-now {
+        background-color: black;
+        border: none;
+        color: #ffffff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-family: poppins;
+        font-size: 35px;
+        font-weight: 300;
+        border-radius: 10px;
+    }
+
+    /* yellow banner */
+    .yellow-banner {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #E6C742;
+        flex-direction: row;
+        justify-content: space-around;
+        box-sizing: border-box;
+        width: 932px;
+        margin: 0;
+    }
+
+    .yellow-banner>img {
+        height: 2em;
+        padding: 2em;
+    }
+
+    /* New Arrivals-Cards */
+
+
+    h2 {
+        padding-left: .5em;
+    }
+
+    .cards>img {
+
+        width: 830px;
+    }
+
+    .cards {
+        margin-left: 58px;
+        width: 830px;
+    }
+
+    .cards > p {
+        width: 835px;
+    }
+
+    h5 {
+        font-weight: 400;
+        font-size: 2rem;
+        margin-bottom: -.5em;
+        margin-top: -.1em;
+    }
+
+    /* .cards {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "text arrow";
+        width: 800px;
+    }
+
+    .text-arrow {
+        grid-area: text;
+    }
+
+    a > #arrow{
+        grid-area: arrow;
+    } */
+
+
+    /* Yellow Girl */
+
+    #yellow-girl {
+        background-color: #E6C742;
+        width: 932px;
+    }
+
+    #yellow-girl>img {
+        max-width: 932px;
+    }
+
+    #yellow-girl>h2 {
+        font-size: 5rem;
+        font-weight: 900;
+        margin-bottom: -.5rem;
+        text-align: center;
+    }
+
+    #yellow-girl>p {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #shop {
+        background-color: black;
+        border: none;
+        color: #ffffff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-family: poppins;
+        font-size: 35px;
+        font-weight: 400;
+        border-radius: 10px;
+        margin-left: 325px;
+        margin-bottom: 40px;
+
+    }
+
+    /* youngs favourites */
+
+    h3 {
+        font-size: 3rem;
+        margin-left: .5em;
+        width: max-content;
+    }
+
+    .cards-2 {
+        margin-left: 40px;
+        width: 932px;
+    }
+
+    #arrow>img {
+        width: 40px;
+        padding-left: 580px;
+
+    }
+
+    /* phone and google/apple buttons */
+
+    .mobile {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas: "phone download";
+        width: 932px;
+    }
+
+    #phone {
+        grid-area: phone;
+    }
+
+    #download {
+        grid-area: download;
+
+    }
+
+    #download {
+        align-self: center;
+        margin-right: 30px;
+
+    }
+
+    #download>h2 {
+        padding-left: 0px;
+        margin-top: 0px;
+
+    }
+
+    /* Bottom Banner */
+
+    .bottom-banner {
+        background-color: #E6C742;
+        text-align: center;
+        width: 932px;
+        padding-top: 20px;
+        padding-bottom: 100px;
+        color: white;
+    }
+
+    h4 {
+        font-size: 2em;
+        font-weight: 800;
+        margin-bottom: 0px;
+    }
+
+    .bottom-banner>p {
+        margin-top: 15px;
+        font-size: 1.2em;
+    }
+
+    #addemail {
+        width: 600px;
+        height: 70px;
+        font-size: 1.5rem;
+        border: 0px;
+        padding-left: 20px;
+        border-radius: 10px;
+        border: 5px solid white;
+        align-content: center;
+    }
+
+    #send-email {
+        background-color: black;
+        border: 7px solid white;
+        color: #ffffff;
+        /* padding-top: 8px;
+    padding-bottom: 8px; */
+        padding-left: 40px;
+        padding-right: 40px;
+        font-family: poppins;
+        font-size: 35px;
+        font-weight: 300;
+        border-radius: 10px;
+        margin-left: -50px;
+        align-content: center;
+    }
+
+    #input {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 10px;
+        width: 600px;
+        margin: auto;
+        padding-right: 10px;
+
+    }
+
+    /* FOOTER */
+    /* .footer-nav {
+    display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     justify-content: center;
-    /* border: 1px solid black; */
-    padding-left: 150px;
-    padding-right: 150px;
-    width: 900px;
-    box-sizing: border-box;
-}
+} */
 
-#sign-up {
-    background-color: black;
-    color: white;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    border-radius: 10px;
-}
+    footer {
+        background-color: black;
+        width: 932px;
+        margin-bottom: 0;
+        /* padding-left: 20px; */
+        /* padding-right: 20px; */
+        padding-bottom: 40px;
+        padding-top: 40px;
+        text-align: center;
+        list-style-type: none;
+    }
 
-.nav ul li{
-    list-style-type: none;
-    line-height: 5rem;
-    text-align: center;
-    font-size: 35px;
-}
-.nav ul li:visited {
-    text-decoration: none;
-}
+    #fashion-card>h5 {
+        color: white;
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 800;
+        padding-bottom: 1rem;
 
-/* Landing graphic */
-.front-page {
-    background-color: #C2C8DB; 
-    border-radius: 30px;
-    width: 920px;
-    box-sizing: border-box;
-    padding-top: 1em;
-    padding-left:2em;
-    padding-right: 4em;
-    
-}
+    }
 
-h1 {
-    margin-bottom: -.5em;
-    font-weight:900;
-}
+    #fashion-card>p {
+        color: #C2C8DB;
+        font-size: 20px;
 
-#shop-now{
-    background-color: black;
-    border: none;
-    color: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-family: poppins;
-    font-size: 35px;
-    font-weight: 100;
-    border-radius: 10px;
-}
+    }
 
-/* yellow banner */
-.yellow-banner{
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #E6C742;
-    flex-direction: row;
-    justify-content: space-around;
-    box-sizing: border-box;
-    width: 932px;   
-    margin:0;
-}
-
-.yellow-banner > img{
-    height: 2em;
-    padding:2em;
-}
-/* New Arrivals-Cards */
+    h6 {
+        color: white;
+        font-size: 1em;
+        font-weight: 300;
+        margin-bottom: 0px;
 
 
-h2 {
-    padding-left: .5em;
-}
-.cards > img{
-    
-    width: 800px;
+    }
+
+    li>.footer-list {
+        color: #C2C8DB;
+        text-decoration: none;
+        margin-left: 0px;
+    }
+
+    .footer-nav>ul {
+        list-style-type: none;
+        margin-left: 0px;
+        padding-left: 0px;
+        line-height: 4rem;
+    }
+
 }
 
-.cards {
-    margin-left: 58px;
-}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
-h5 {
-    font-weight: 400;
-    font-size: 2rem;
-    margin-bottom: -.5em;
-    margin-top: -.1em;
+
 }
 
 
-/* Yellow Girl */
-
-#yellow-girl {
-    background-color: #E6C742;
-    width: 932px;
-}
-
-#yellow-girl > img {
-    max-width: 932px;
-}
-#yellow-girl > h2 {
-    font-size: 5rem;
-    font-weight: 900;
-    margin-bottom: -.5rem;
-    text-align: center;
-}
-
-#yellow-girl > p {
-    font-size: 2rem;
-    text-align: center;
-}
-
-#shop {
-    background-color: black;
-    border: none;
-    color: #ffffff;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    font-family: poppins;
-    font-size: 35px;
-    font-weight: 400;
-    border-radius: 10px;
-    margin-left: 325px;
-    margin-bottom: 40px;
-    
-}
-
- /* youngs favourites */
-
- h3 {
-    font-size: 3rem;
-    margin-left: .5em;
-    width:max-content;
- }
-
- .cards-2 {
-    margin-left: 40px;
-    width:932px;
- }
- #arrow > img{
-    width: 40px;
-    padding-left: 580px;
-    
-}
-
-/* phone and google/apple buttons */
-
-.mobile { 
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "phone download";
-    width: 932px;
- }
- #phone {
-    grid-area: phone; 
- }
- 
- #download {
-    grid-area: download;
-
- }
-
-#download  {
-    align-self: center; 
-    margin-right: 30px;
-   
-}
-
-#download > h2 {
-    padding-left:0px;
-    margin-top:0px;
-    
-}
-/* Bottom Banner */
-
-.bottom-banner {
-    background-color:#E6C742;
-    text-align: center;
-    width: 932px;
-    padding-top: 20px;
-    padding-bottom: 100px;
-    color:white;
-}
-
-.bottom-banner > h4 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-#addemail {
-    width: 600px;
-    height: 70px;
-    font-size: 1.5rem;
-    border: 0px;
-    padding-left: 20px;
-    border-radius: 10px;
-    border: 5px solid white;
-    align-content: center;
-}
-
-#send-email {
-    background-color: black;
-    border: 7px solid white;
-    color: #ffffff;
-    /* padding-top: 8px;
-    padding-bottom: 8px; */
-    padding-left: 40px;
-    padding-right: 40px;
-    font-family: poppins;
-    font-size: 35px;
-    font-weight: 300;
-    border-radius: 10px;
-    margin-left: -50px;
-    align-content:center;
-}
-
-#input {
-    display: flex; 
-    flex-direction: row;
-    align-items: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-    width: 600px;
-    margin: auto; 
-    padding-right: 10px;
-    
-}
-/* FOOTER */
-
-footer{
-    background-color: black;
-    width: 932px;
-    margin-bottom: 0;
-    /* padding-left: 20px; */
-    /* padding-right: 20px; */
-    padding-bottom: 20px;
-    text-align: center;
-}
-
-#fashion-card > h3 {
-    color: white;
-    margin-bottom: 5px;
-    margin-top: 0;
-    margin-left:0px;
-    padding-left: 0px;
-    padding-top: 20px;
-    text-align: center;
-}
-
-#fashion-card > p {
-    color:#C2C8DB;
-    font-size: 20px;
-    
-}
-
-.footer-nav > h4 {
-    color: white;
-    margin-bottom: 10px;
-    padding-left: 0px;
-}
-
-.footer-list {
-    color: #C2C8DB;
-    text-decoration: none;
-    margin-left: 0px;
-    width: 932px; 
-    list-style-type: none;
+@media only screen and (min-width : 1024px) {
+    /* Styles */
 }
