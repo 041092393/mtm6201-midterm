@@ -2,10 +2,13 @@
 
 
 /* Start of basic document styling */
-
+/* * {
+    margin-left: 0;
+    margin-right: 0;
+} */
 .container {
     max-width:932px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 body {
@@ -108,6 +111,8 @@ h1 {
     padding:2em;
 }
 /* New Arrivals-Cards */
+
+
 h2 {
     padding-left: .5em;
 }
@@ -126,9 +131,7 @@ h5 {
     margin-bottom: -.5em;
     margin-top: -.1em;
 }
-#arrow {
-    width: 50px;
-}
+
 
 /* Yellow Girl */
 
@@ -179,28 +182,134 @@ h5 {
 
  .cards-2 {
     margin-left: 40px;
+    width:932px;
  }
+ #arrow > img{
+    width: 40px;
+    padding-left: 580px;
+    
+}
 
-.phone { 
+/* phone and google/apple buttons */
+
+.mobile { 
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-areas: "download phone";
+    grid-template-areas: "phone download";
     width: 932px;
  }
-
-
-
+ #phone {
+    grid-area: phone; 
+ }
+ 
  #download {
     grid-area: download;
 
  }
 
- #phone {
-    grid-area: phone; 
- }
-
 #download  {
-    margin-top: 50px;
-    float:right;
+    align-self: center; 
+    margin-right: 30px;
+   
 }
 
+#download > h2 {
+    padding-left:0px;
+    margin-top:0px;
+    
+}
+/* Bottom Banner */
+
+.bottom-banner {
+    background-color:#E6C742;
+    text-align: center;
+    width: 932px;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    color:white;
+}
+
+.bottom-banner > h4 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#addemail {
+    width: 600px;
+    height: 70px;
+    font-size: 1.5rem;
+    border: 0px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 5px solid white;
+    align-content: center;
+}
+
+#send-email {
+    background-color: black;
+    border: 7px solid white;
+    color: #ffffff;
+    /* padding-top: 8px;
+    padding-bottom: 8px; */
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: poppins;
+    font-size: 35px;
+    font-weight: 300;
+    border-radius: 10px;
+    margin-left: -50px;
+    align-content:center;
+}
+
+#input {
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 600px;
+    margin: auto; 
+    padding-right: 10px;
+    
+}
+/* FOOTER */
+
+footer{
+    background-color: black;
+    width: 932px;
+    margin-bottom: 0;
+    /* padding-left: 20px; */
+    /* padding-right: 20px; */
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#fashion-card > h3 {
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 0;
+    margin-left:0px;
+    padding-left: 0px;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#fashion-card > p {
+    color:#C2C8DB;
+    font-size: 20px;
+    
+}
+
+.footer-nav > h4 {
+    color: white;
+    margin-bottom: 10px;
+    padding-left: 0px;
+}
+
+.footer-list {
+    color: #C2C8DB;
+    text-decoration: none;
+    margin-left: 0px;
+    width: 932px; 
+    list-style-type: none;
+}
