@@ -22,7 +22,7 @@ ul li a {
 }
 
 p {
-    font-size: 2rem;
+    font-size: .5em;
 }
 
 /***************** MOBILE STYLING *****************/
@@ -30,32 +30,35 @@ p {
     /* Styles */
 
     /* navigation */
+    #logo {
+        min-width: 300px;
+        max-width: 400px;
+        align-self: center;
+
+    }
     .nav {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        /* border: 1px solid black; */
-        padding-left: 150px;
-        padding-right: 150px;
-        width: 900px;
+        text-align: center;
+        width: 480px;
         box-sizing: border-box;
     }
 
     #sign-up {
         background-color: black;
         color: white;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 40px;
-        padding-right: 40px;
-        border-radius: 10px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 5px;
     }
 
     .nav ul li {
         list-style-type: none;
-        line-height: 5rem;
+        line-height: 3rem;
         text-align: center;
-        font-size: 35px;
+        font-size: 16px;
     }
 
     .nav ul li:visited {
@@ -66,7 +69,7 @@ p {
     .front-page {
         background-color: #C2C8DB;
         border-radius: 30px;
-        width: 920px;
+        width: 480px;
         box-sizing: border-box;
         padding-top: 1em;
         padding-left: 2em;
@@ -77,25 +80,28 @@ p {
     h1 {
         margin-bottom: -.5em;
         font-weight: 900;
+        font-size: large;
     }
 
     #content>img {
         margin-bottom: 0px;
         padding-bottom: 0px;
+        padding-left: 100px;
+        max-width: 300px;
     }
 
     #shop-now {
         background-color: black;
         border: none;
         color: #ffffff;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
         font-family: poppins;
-        font-size: 35px;
+        font-size: 16px;
         font-weight: 300;
-        border-radius: 10px;
+        border-radius: 5px;
     }
 
     /* yellow banner */
@@ -106,13 +112,13 @@ p {
         flex-direction: row;
         justify-content: space-around;
         box-sizing: border-box;
-        width: 932px;
+        width: 480px;
         margin: 0;
     }
 
     .yellow-banner>img {
-        height: 2em;
-        padding: 2em;
+        height: 1em;
+        padding: 1em;
     }
 
     /* New Arrivals-Cards */
@@ -120,54 +126,38 @@ p {
 
     h2 {
         padding-left: .5em;
+        font-size: 1em;
     }
 
     .cards>img {
-
-        width: 830px;
+        width: 400px;
     }
 
     .cards {
-        margin-left: 58px;
-        width: 830px;
+        margin-left: 35px;
+        width: 480px;
     }
 
     .cards > p {
-        width: 835px;
+        width: 350px;
     }
 
     h5 {
         font-weight: 400;
-        font-size: 2rem;
+        font-size: 1rem;
         margin-bottom: -.5em;
         margin-top: -.1em;
     }
-
-    /* .cards {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-areas: "text arrow";
-        width: 800px;
-    }
-
-    .text-arrow {
-        grid-area: text;
-    }
-
-    a > #arrow{
-        grid-area: arrow;
-    } */
-
 
     /* Yellow Girl */
 
     #yellow-girl {
         background-color: #E6C742;
-        width: 932px;
+        width: 480px;
     }
 
     #yellow-girl>img {
-        max-width: 932px;
+        max-width: 480px;
     }
 
     #yellow-girl>h2 {
@@ -178,7 +168,7 @@ p {
     }
 
     #yellow-girl>p {
-        font-size: 2rem;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -209,12 +199,12 @@ p {
 
     .cards-2 {
         margin-left: 40px;
-        width: 932px;
+        width: 480px;
     }
 
     #arrow>img {
-        width: 40px;
-        padding-left: 580px;
+        width: 20px;
+        padding-left: 378px;
 
     }
 
