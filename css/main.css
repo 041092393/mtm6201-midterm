@@ -439,7 +439,7 @@ p {
 
     .new {
         display: grid;
-        grid-template-columns: repeat (1, 1fr);
+        grid-template-columns: repeat (3, 1fr);
         grid-template-areas: "greygirl purplegirl bluegirl";
         width: 1024px;
     }
@@ -457,8 +457,16 @@ p {
     }
 
     .arrow > img {
-        width: 40px;
-        
+        width: 25px;
+        padding-left: 148px;
+    }
+
+    .cards > h5 { 
+        margin: 0px;
+    }
+
+    .cards > p {
+        margin-top: 10px;
     }
 
     
