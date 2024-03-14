@@ -433,26 +433,26 @@ p {
     }
 
     /* NEW  ARRIVALS */
-    /* .cards>img {
-        width: 300px;
-    } */
-
-    .cards {
-        display: grid;
-        grid-template-columns: repeat (3, 1fr);
-        grid-template-areas: "greygirl purplegirl bluegirl";
+    .cards>img {
         width: 300px;
     }
 
-    .cards:nth-child(1) {
-        grid-area: greygirl;
+    .new {
+        display: grid;
+        grid-template-columns: repeat (1, 1fr);
+        grid-template-areas: "greygirl purplegirl bluegirl";
+        width: 1024px;
     }
 
     .cards:nth-child(2) {
-        grid-area: purplegirl;
+        grid-area: greygirl;
     }
 
     .cards:nth-child(3) {
+        grid-area: purplegirl;
+    }
+
+    .cards:nth-child(4) {
         grid-area: bluegirl;
     }
 
@@ -518,7 +518,7 @@ h4 {
     font-weight: 800;
     margin-bottom: 0px;
     width: 400px;
-    
+
 }
 
 .bottom-banner>p {
