@@ -463,7 +463,10 @@ p {
 
     .arrow > img {
         width: 40px;
+        
     }
+
+    
 /* PHONE & CLICKABLE LINKS */
 .mobile {
     display: grid;
@@ -501,6 +504,66 @@ p {
 #phone>img {
     width: 480px;
 }
+
+
+
+/* bottom banner */
+.bottom-banner {
+    background-color: #E6C742;
+    text-align: center;
+    width: 1024px;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    color: white;
+    margin-left: 0px;
+}
+
+h4 {
+    font-size: 1em;
+    font-weight: 800;
+    margin-bottom: 0px;
+}
+
+.bottom-banner>p {
+    margin-top: 15px;
+    font-size: .8em;
+}
+
+#addemail {
+    width: 300px;
+    height: 70px;
+    font-size: .8em;
+    border: 0px;
+    padding-left: 20px;
+    border-radius: 10px;
+    border: 5px solid white;
+    align-content: center;
+}
+
+#send-email {
+    background-color: black;
+    border: 22px solid white;
+    color: #ffffff;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: poppins;
+    font-size: 1em;
+    font-weight: 300;
+    border-radius: 5px;
+    align-content: center;
+}
+
+#input {
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 300px;
+    margin-left: 55px;
+
+}
+
+
 
 }
 
