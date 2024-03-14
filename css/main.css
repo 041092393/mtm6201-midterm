@@ -26,7 +26,7 @@ p {
 }
 
 /***************** MOBILE STYLING *****************/
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 768px) {
     /* Styles */
 
     /* navigation */
@@ -36,6 +36,7 @@ p {
         align-self: center;
 
     }
+
     .nav {
         display: flex;
         flex-direction: column;
@@ -135,11 +136,11 @@ p {
     }
 
     .cards {
-    
+
         width: 480px;
     }
 
-    .cards > p {
+    .cards>p {
         width: 320px;
     }
 
@@ -199,12 +200,12 @@ p {
         width: max-content;
     }
 
-    .cards-2 > img {
+    .cards-2>img {
         margin-left: 0px;
         width: 460px;
     }
 
-    #arrow>img {
+    .arrow>img {
         width: 20px;
         padding-left: 430px;
         text-align: center;
@@ -241,7 +242,7 @@ p {
 
     }
 
-    #phone > img {
+    #phone>img {
         width: 280px;
     }
 
@@ -362,16 +363,144 @@ p {
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
- /* navigation */
-.list > li a{
-    display: inline-block;
-    text-decoration: none;
-    list-style-type: none;
+    /* navigation */
+
+
+    #logo {
+        box-sizing: border-box;
+        /* border: 1px solid black;  */
+        padding-left: 375px;
+        margin-bottom: 0px;
+    }
+
+    .nav>ul>li {
+        text-decoration: none;
+        list-style-type: none;
+        display: inline-block;
+        margin-right: 1em;
+        margin-top: 0px;
+        padding: 0px;
+    }
+
+    /* landing content */
+    #content {
+        background-color: #C2C8DB;
+        width: 950px;
+        border-radius: 30px;
+        padding-top: 2em;
+        padding-left: 2em;
+    }
+
+    h1 {
+        margin: 0px;
+    }
+
+    #content>img {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #content>p {
+        font-size: 30px;
+        margin: .5em;
+    }
+
+
+    #shop-now {
+        background-color: black;
+        border: none;
+        color: #ffffff;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-family: poppins;
+        font-size: 1.5em;
+        font-weight: 300;
+        border-radius: 10px;
+    }
+
+    /* yellow banner */
+    .yellow-banner {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #E6C742;
+        flex-direction: row;
+        justify-content: space-around;
+        box-sizing: border-box;
+        width: 1024px;
+        margin: 0;
+    }
+
+    .yellow-banner>img {
+        height: 2em;
+        padding: 2em;
+    }
+
+    /* NEW  ARRIVALS */
+    /* .cards>img {
+        width: 300px;
+    } */
+
+    .cards {
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-areas: "greygirl purplegirl bluegirl";
+        width: 300px;
+    }
+
+    .cards:nth-child(1) {
+        grid-area: greygirl;
+    }
+
+    .cards:nth-child(2) {
+        grid-area: purplegirl;
+    }
+
+    .cards:nth-child(3) {
+        grid-area: bluegirl;
+    }
+
+    .arrow > img {
+        width: 40px;
+    }
+/* PHONE & CLICKABLE LINKS */
+.mobile {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "download phone";
+    width: 1024px;
 }
 
+#phone {
+    grid-area: phone;
+}
 
+#download {
+    grid-area: download;
 
+}
 
+#download {
+    align-self: center;
+    margin-left: 30px;
+
+}
+
+#download>h2 {
+    padding-left: 0px;
+    margin-top: 0px;
+    padding-right: 150px;
+}
+
+#download > p { 
+    padding-right: 150px;
+    padding-bottom: 35px;
+}
+
+#phone>img {
+    width: 480px;
+}
 
 }
 
