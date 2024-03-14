@@ -22,7 +22,7 @@ ul li a {
 }
 
 p {
-    font-size: .5em;
+    font-size: 16px;
 }
 
 /***************** MOBILE STYLING *****************/
@@ -118,7 +118,7 @@ p {
 
     .yellow-banner>img {
         height: 1em;
-        padding: 1em;
+        padding: .8em;
     }
 
     /* New Arrivals-Cards */
@@ -130,16 +130,17 @@ p {
     }
 
     .cards>img {
-        width: 400px;
+        width: 460px;
+        align-items: center;
     }
 
     .cards {
-        margin-left: 35px;
+    
         width: 480px;
     }
 
     .cards > p {
-        width: 350px;
+        width: 320px;
     }
 
     h5 {
@@ -148,6 +149,7 @@ p {
         margin-bottom: -.5em;
         margin-top: -.1em;
     }
+
 
     /* Yellow Girl */
 
@@ -161,14 +163,14 @@ p {
     }
 
     #yellow-girl>h2 {
-        font-size: 5rem;
+        font-size: 2rem;
         font-weight: 900;
         margin-bottom: -.5rem;
         text-align: center;
     }
 
     #yellow-girl>p {
-        font-size: 1rem;
+        font-size: 16px;
         text-align: center;
     }
 
@@ -176,35 +178,36 @@ p {
         background-color: black;
         border: none;
         color: #ffffff;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
         font-family: poppins;
-        font-size: 35px;
+        font-size: 20px;
         font-weight: 400;
-        border-radius: 10px;
-        margin-left: 325px;
+        border-radius: 5px;
         margin-bottom: 40px;
+        margin-left: 175px;
 
     }
 
     /* youngs favourites */
 
     h3 {
-        font-size: 3rem;
+        font-size: 1em;
         margin-left: .5em;
         width: max-content;
     }
 
-    .cards-2 {
-        margin-left: 40px;
-        width: 480px;
+    .cards-2 > img {
+        margin-left: 0px;
+        width: 460px;
     }
 
     #arrow>img {
         width: 20px;
-        padding-left: 378px;
+        padding-left: 430px;
+        text-align: center;
 
     }
 
@@ -214,7 +217,7 @@ p {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-areas: "phone download";
-        width: 932px;
+        width: 480px;
     }
 
     #phone {
@@ -238,32 +241,36 @@ p {
 
     }
 
+    #phone > img {
+        width: 280px;
+    }
+
     /* Bottom Banner */
 
     .bottom-banner {
         background-color: #E6C742;
         text-align: center;
-        width: 932px;
+        width: 480px;
         padding-top: 20px;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
         color: white;
     }
 
     h4 {
-        font-size: 2em;
+        font-size: 1em;
         font-weight: 800;
         margin-bottom: 0px;
     }
 
     .bottom-banner>p {
         margin-top: 15px;
-        font-size: 1.2em;
+        font-size: .8em;
     }
 
     #addemail {
-        width: 600px;
+        width: 300px;
         height: 70px;
-        font-size: 1.5rem;
+        font-size: .8em;
         border: 0px;
         padding-left: 20px;
         border-radius: 10px;
@@ -273,29 +280,24 @@ p {
 
     #send-email {
         background-color: black;
-        border: 7px solid white;
+        border: 22px solid white;
         color: #ffffff;
-        /* padding-top: 8px;
-    padding-bottom: 8px; */
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 15px;
+        padding-right: 15px;
         font-family: poppins;
-        font-size: 35px;
+        font-size: 1em;
         font-weight: 300;
-        border-radius: 10px;
-        margin-left: -50px;
+        border-radius: 5px;
         align-content: center;
     }
 
     #input {
         display: flex;
         flex-direction: row;
-        align-items: center;
         background-color: #ffffff;
-        border-radius: 10px;
-        width: 600px;
-        margin: auto;
-        padding-right: 10px;
+        border-radius: 5px;
+        width: 300px;
+        margin-left: 55px;
 
     }
 
@@ -309,7 +311,7 @@ p {
 
     footer {
         background-color: black;
-        width: 932px;
+        width: 480px;
         margin-bottom: 0;
         /* padding-left: 20px; */
         /* padding-right: 20px; */
@@ -330,15 +332,15 @@ p {
 
     #fashion-card>p {
         color: #C2C8DB;
-        font-size: 20px;
+        font-size: .7em;
 
     }
 
     h6 {
         color: white;
-        font-size: 1em;
+        font-size: .9em;
         font-weight: 300;
-        margin-bottom: 0px;
+        margin-bottom: -10px;
 
 
     }
@@ -347,21 +349,33 @@ p {
         color: #C2C8DB;
         text-decoration: none;
         margin-left: 0px;
+        font-size: .7em;
     }
 
     .footer-nav>ul {
         list-style-type: none;
         margin-left: 0px;
         padding-left: 0px;
-        line-height: 4rem;
+        line-height: 2.8rem;
     }
 
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+ /* navigation */
+.list > li a{
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+
 
 
 }
+
+
 
 
 @media only screen and (min-width : 1024px) {
