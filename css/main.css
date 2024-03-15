@@ -444,24 +444,29 @@ p {
         margin: 0 auto;
     }
     .nav {
-        display:flex; 
-       width: 98%;
-
+        display:grid;
+        grid-template-columns: repeat (2, 1fr);
+        grid-template-areas: "logo links";
     }
+
+    
     
     #logo {
+        grid-area: logo; 
         box-sizing: border-box;
         margin-bottom: 0px;
+        align-items: start;
+        padding-left: 1em
        
     }
 
-    .nav > #logo{
-        display:flex;
-        align-self: flex-start;
-        padding-left: 3em;
+    ul { 
+        grid-area: links;
+    }
+
         
 
-    }
+    
 
     .nav > ul {
         display: flex; 
@@ -476,6 +481,7 @@ p {
         padding-left: 8rem;
         margin-bottom: 2em;
         padding-top: 2.5rem;
+        padding-right: 1em;
     }
 
     ul {
@@ -485,10 +491,12 @@ p {
     /* landing content */
     #content {
         background-color: #C2C8DB;
-        width: 90%;
+        width: 80%;
         border-radius: 30px;
         padding-top: 2em;
         padding-left: 2em;
+        /* margin-left: 2em;
+        margin-right: 2em; */
     }
 
     h1 {
@@ -729,7 +737,7 @@ h5 {
         align-items: center;
         background-color: #E6C742;
         text-align: center;
-        width: 100% ;
+        width: 100%;
         padding-top: 40px;
         padding-bottom: 70px;
         color: white;
@@ -780,6 +788,7 @@ h5 {
         background-color: #ffffff;
         border-radius: 5px;
         width: 300px;
+    
         
 
     }
@@ -803,13 +812,17 @@ h5 {
         color: white;
         font-size: 3rem;
         font-weight: 800;
+        padding-top: 0px;
+        margin-top: 0px;
+        margin-left: 0px;
     }
 
     #fashion-card>p {
         color: #C2C8DB;
         font-size: .7em;
         width: 15rem;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        margin-left: 0px;
     }
 
     h6 {
