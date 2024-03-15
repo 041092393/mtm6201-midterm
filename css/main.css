@@ -125,7 +125,7 @@ p {
     }
 
     h1 {
-        margin-bottom: -.5em;
+        margin-bottom: 1em;
         font-weight: 900;
         font-size: large;
     }
@@ -136,7 +136,7 @@ p {
         max-width: 90%;
     }
 
-    #head > p {
+    #headertext > p {
         margin-top: 1em;
         margin-bottom: 1em;
     }
