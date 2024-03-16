@@ -564,6 +564,14 @@ p {
     ul {
         padding: 0px;
     }
+    .arrow { 
+        transform: rotate(0deg);
+        transition: transform 1s;
+    }
+    .arrow:hover {
+        transform: rotate(360deg);
+    }
+
 
     /* landing content */
     #content {
