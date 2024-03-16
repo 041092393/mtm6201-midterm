@@ -15,6 +15,14 @@
 </head>
 
 <body>
+    <div class="accessible-links">
+        <ul class="skip-links">
+            <li><a href="#nav">Skip to top nav</a></li>
+            <li><a href="#main-content">Skip to article</a></li>
+            <li><a href="#addemail">Skip to email sign up</a></li>
+            <li><a href="#footer">Skip to footer nav</a></li>
+        </ul>
+    </div>
     <div class="container">
         <!-- navigation -->
         <header class="nav" role="navigation">
@@ -30,11 +38,11 @@
 
 
         <div id="main-content" role="main">
-            <div class="sideby">
+            <div class="sideby" itemscope itemtype="http://schema.org/Article">
                 <picture>
                     <source media="(min-width: 480px) (max-width: 468px) " srcset="images/small-fashion.jp 1x" />
                     <source media="(min-width: 768px)" srcset="images/large-fashion.jpg 1x" />
-                    <img src="images/small-fashion.jpg" alt="stylish girl wearing sunglasses">
+                    <img src="images/small-fashion.jpg" alt="stylish girl wearing sunglasses" itemprop="image">
                 </picture>
             </div>
             

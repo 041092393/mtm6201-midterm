@@ -15,10 +15,19 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="accessible-links">
+        <ul class="skip-links">
+            <li><a href="#nav">Skip to top nav</a></li>
+            <li><a href="#new">Skip to new arrivals</a></li>
+            <li><a href="#yellow-girl">Skip to sale information</a></li>
+            <li><a href="#addemail">Skip to email sign up</a></li>s
+            <li><a href="#footer">Skip to footer nav</a></li>
+        </ul>
+    </div>
+    <div class="container" >
         <!-- navigation -->
-        <header class="nav" role="navigation">
-            <img src="images/logo.png" alt="fashion logo" id="logo">
+        <header class="nav" role="navigation" itemscope itemtype="http://schema.org/Article">
+            <img src="images/logo.png" alt="fashion logo" id="logo" itemprop="logo">
             <ul>
                 <li><a class="list" href="#">Catalogue</a></li>
                 <li><a class="list" href="fashion.html">Fashion</a></li>
@@ -35,8 +44,8 @@
                     <P>Live for influential and innovative fashion!</P>
                     <button id="shop-now" type="submit">Shop Now</button>
                 </div>
-                <div id="headergirl">
-                    <img src="images/headergirl.png" alt="Happy dancing girl in faux fur pink jacket">
+                <div id="headergirl" itemscope itemtype="http://schema.org/Article">
+                    <img src="images/headergirl.png" alt="Happy dancing girl in faux fur pink jacket" itemprop="image">
                 </div>
             </div>
         </div>
@@ -44,12 +53,12 @@
 
         <!-- Yellow Banner -->
         <div class="yellow-banner">
-            <img src="images/hm.svg" alt="H&M logo">
-            <img src="images/obey.svg" alt="Obey logo">
-            <img src="images/shopify-logo-default-cmyk.svg" alt="shopify logo">
-            <img src="images/lacoste.svg" alt="lacoste logo">
-            <img src="images/Levi_s.svg" alt="levi's logo">
-            <img src="images/amazon-logo-rgb.svg" alt="amazon logo">
+            <img src="images/hm.svg" alt="H&M logo" itemprop="image">
+            <img src="images/obey.svg" alt="Obey logo" itemprop="image">
+            <img src="images/shopify-logo-default-cmyk.svg" alt="shopify logo" itemprop="image">
+            <img src="images/lacoste.svg" alt="lacoste logo" itemprop="image">
+            <img src="images/Levi_s.svg" alt="levi's logo" itemprop="image">
+            <img src="images/amazon-logo-rgb.svg" alt="amazon logo" itemprop="image">
         </div>
 
         <!-- New Arrivals -->
@@ -57,7 +66,7 @@
         <div class="new">
 
             <div class="cards">
-                <img src="images/greygirl.png" alt="girl wearing an orange hoodie and grey jeans">
+                <img src="images/greygirl.png" alt="girl wearing an orange hoodie and grey jeans" itemprop="image">
                 <h5>Hoodies & Sweatshirt</h5>
                 <div class="explore">
                     <p>Explore Now!</p>
@@ -66,7 +75,7 @@
             </div>
 
             <div class="cards">
-                <img src="images/purplegirl.png" alt="girl wearing a blue jacket and green jeans">
+                <img src="images/purplegirl.png" alt="girl wearing a blue jacket and green jeans" itemprop="image">
                 <h5>Coats & Parkas</h5>
                 <div class="explore">
                     <p>Explore Now!</p>
@@ -76,7 +85,7 @@
 
             </div>
             <div class="cards">
-                <img src="images/bluegirl.png" alt="girl wearing a white t-shirt and red jean shorts">
+                <img src="images/bluegirl.png" alt="girl wearing a white t-shirt and red jean shorts" itemprop="image">
                 <div class="clickable"></div>
                 <h5>Tees & T-shirt</h5>
                 <div class="explore">
@@ -88,7 +97,7 @@
         <!-- YELLOW GIRL -->
         <div id="yellow-girl">
             <div id="girl">
-                <img src="images/yellowgirl.png" alt="girl wearing a yellow tank top and jean shorts">
+                <img src="images/yellowgirl.png" alt="girl wearing a yellow tank top and jean shorts" itemprop="image">
             </div>
             <div id="girl-text">
                 <h2>PAYDAY SALE NOW</h2>
@@ -105,7 +114,7 @@
             <h3>Young's Favourite</h3>
             <div id="favourites">
                 <div class="cards-2">
-                    <img src="images/twogirls.png" alt="two girls wearing sunglasses">
+                    <img src="images/twogirls.png" alt="two girls wearing sunglasses" itemprop="image">
                     <h5>Trending on instagram</h5>
                     <div class="explore">
                         <p>Explore Now!</p>
@@ -113,7 +122,7 @@
                     </div>
                 </div>
                 <div class="cards-2">
-                    <img src="images/pinkgirl.png" alt="girl wearing sunglasses">
+                    <img src="images/pinkgirl.png" alt="girl wearing sunglasses" itemprop="image">
                     <h5>All Under $40</h5>
                     <div class="explore">
                         <p>Explore Now!</p>
@@ -157,10 +166,10 @@
             <div id="fashion-card" class="footer-nav">
                 <h5>FASHION</h5>
                 <p>Complete your style with awesome clothes from us.</p>
-                <a href="www.facebook.com" aria-label="link to our facebook"><img src="images/Facebook.png" alt="facebook link"></a>
-                <a href="www.instagram.com" aria-label="link to our instagram"><img src="images/Instagram.png" alt="instagram link"></a>
-                <a href="www.twitter.com" area-label="link to our twitter"><img src="images/Twitter.png" alt="twitter link"></a>
-                <a href="www.linkedin.com" aria-label="link to our linkedin"><img src="images/Linkedin.png" alt="Linkedin link"></a>
+                <a href="www.facebook.com" aria-label="link to our facebook"><img src="images/Facebook.png" alt="facebook link" itemprop="logo"></a>
+                <a href="www.instagram.com" aria-label="link to our instagram"><img src="images/Instagram.png" alt="instagram link" itemprop="logo"></a>
+                <a href="www.twitter.com" area-label="link to our twitter"><img src="images/Twitter.png" alt="twitter link" itemprop="logo"></a>
+                <a href="www.linkedin.com" aria-label="link to our linkedin"><img src="images/Linkedin.png" alt="Linkedin link" itemprop="logo"></a>
             </div>
 
             <div class="footer-nav">
